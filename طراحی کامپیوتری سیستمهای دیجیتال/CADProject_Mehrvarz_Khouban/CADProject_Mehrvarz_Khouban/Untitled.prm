@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\CADProject//Untitled -x xcf04s -u 00000000 C:/CADProject/lumberjack.bit 
+
+PROM C:\CADProject\Untitled.prm map: Sun Dec 25 21:23:34 2022
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 02cfe2ac
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Dec 25 21:22:15 2022 C:/CADProject/lumberjack.bit

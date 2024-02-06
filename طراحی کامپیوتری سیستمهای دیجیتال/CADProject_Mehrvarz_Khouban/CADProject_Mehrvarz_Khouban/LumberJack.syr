@@ -1,0 +1,1245 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: LumberJack.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "LumberJack.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "LumberJack"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : LumberJack
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\CADProject\VGA_Controller.vhd" into library work
+Parsing entity <VGA_controller>.
+Parsing architecture <Behavioral> of entity <vga_controller>.
+Parsing VHDL file "C:\CADProject\Debouncer.vhd" into library work
+Parsing entity <DeBounce>.
+Parsing architecture <behav> of entity <debounce>.
+Parsing VHDL file "C:\CADProject\LumberJack.vhd" into library work
+Parsing entity <LumberJack>.
+Parsing architecture <LumberJack> of entity <lumberjack>.
+WARNING:HDLCompiler:946 - "C:\CADProject\LumberJack.vhd" Line 116: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\CADProject\LumberJack.vhd" Line 124: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\CADProject\LumberJack.vhd" Line 125: Actual for formal port button_in is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\CADProject\LumberJack.vhd" Line 131: Actual for formal port reset is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\CADProject\LumberJack.vhd" Line 132: Actual for formal port button_in is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <LumberJack> (architecture <LumberJack>) from library <work>.
+
+Elaborating entity <VGA_controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DeBounce> (architecture <behav>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\CADProject\LumberJack.vhd" Line 142: Using initial value 270 for x_1 since it is never assigned
+WARNING:HDLCompiler:871 - "C:\CADProject\LumberJack.vhd" Line 143: Using initial value 350 for x_2 since it is never assigned
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <LumberJack>.
+    Related source file is "C:\CADProject\LumberJack.vhd".
+WARNING:Xst:647 - Input <Key<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <lose>.
+    Found 1-bit register for signal <flag_key>.
+    Found 1-bit register for signal <flag_key_0044>.
+    Found 6-bit register for signal <ColorTable>.
+    Found 32-bit register for signal <game_loop.trophy_position_y>.
+    Found 32-bit register for signal <game_loop.trophy_position_x>.
+    Found 32-bit register for signal <game_loop.branch_positions[4]_x>.
+    Found 32-bit register for signal <game_loop.branch_positions[1]_x>.
+    Found 32-bit register for signal <game_loop.branch_positions[4]_y>.
+    Found 32-bit register for signal <game_loop.branch_positions[3]_x>.
+    Found 32-bit register for signal <game_loop.branch_positions[2]_x>.
+    Found 32-bit register for signal <game_loop.branch_positions[2]_y>.
+    Found 32-bit register for signal <game_loop.branch_positions[0]_x>.
+    Found 32-bit register for signal <game_loop.branch_positions[3]_y>.
+    Found 32-bit register for signal <game_loop.branch_positions[1]_y>.
+    Found 32-bit register for signal <game_loop.branch_positions[0]_y>.
+    Found 7-bit register for signal <score>.
+    Found 7-bit register for signal <game_loop.score_variable>.
+    Found 25-bit register for signal <_v29>.
+    Found 7-bit register for signal <timer_game>.
+    Found 8-bit register for signal <seg0>.
+    Found 8-bit register for signal <seg1>.
+    Found 8-bit register for signal <seg2>.
+    Found 8-bit register for signal <seg3>.
+    Found 8-bit register for signal <Leds>.
+    Found 1-bit register for signal <player_moved>.
+    Found 32-bit register for signal <game_loop.current_x>.
+    Found 1-bit register for signal <game_loop.flag_key>.
+    Found 1-bit register for signal <eat_trophy>.
+    Found 13-bit register for signal <counter>.
+    Found 4-bit register for signal <seg_selectors>.
+    Found 32-bit register for signal <pseudo_rand>.
+    Found 31-bit subtractor for signal <GND_5_o_GND_5_o_sub_248_OUT> created at line 332.
+    Found 32-bit adder for signal <game_loop.branch_positions[0]_y[31]_GND_5_o_add_10_OUT> created at line 163.
+    Found 32-bit adder for signal <game_loop.branch_positions[1]_y[31]_GND_5_o_add_14_OUT> created at line 163.
+    Found 32-bit adder for signal <game_loop.branch_positions[2]_y[31]_GND_5_o_add_18_OUT> created at line 163.
+    Found 32-bit adder for signal <game_loop.branch_positions[3]_y[31]_GND_5_o_add_22_OUT> created at line 163.
+    Found 32-bit adder for signal <game_loop.branch_positions[4]_y[31]_GND_5_o_add_26_OUT> created at line 163.
+    Found 32-bit adder for signal <n0552> created at line 257.
+    Found 32-bit adder for signal <n0555> created at line 267.
+    Found 32-bit adder for signal <n0556> created at line 268.
+    Found 32-bit adder for signal <n0558> created at line 274.
+    Found 32-bit adder for signal <n0559> created at line 275.
+    Found 32-bit adder for signal <n0561> created at line 274.
+    Found 32-bit adder for signal <n0562> created at line 275.
+    Found 32-bit adder for signal <n0564> created at line 274.
+    Found 32-bit adder for signal <n0565> created at line 275.
+    Found 32-bit adder for signal <n0567> created at line 274.
+    Found 32-bit adder for signal <n0568> created at line 275.
+    Found 32-bit adder for signal <n0570> created at line 274.
+    Found 32-bit adder for signal <n0571> created at line 275.
+    Found 7-bit adder for signal <game_loop.score_variable[6]_GND_5_o_add_190_OUT> created at line 284.
+    Found 32-bit adder for signal <game_loop.branch_positions[0]_y[31]_GND_5_o_add_191_OUT> created at line 286.
+    Found 32-bit adder for signal <game_loop.branch_positions[1]_y[31]_GND_5_o_add_192_OUT> created at line 286.
+    Found 32-bit adder for signal <game_loop.branch_positions[2]_y[31]_GND_5_o_add_193_OUT> created at line 286.
+    Found 32-bit adder for signal <game_loop.branch_positions[3]_y[31]_GND_5_o_add_194_OUT> created at line 286.
+    Found 32-bit adder for signal <game_loop.branch_positions[4]_y[31]_GND_5_o_add_195_OUT> created at line 286.
+    Found 32-bit adder for signal <game_loop.trophy_position_y[31]_GND_5_o_add_198_OUT> created at line 290.
+    Found 7-bit adder for signal <timer_game[6]_GND_5_o_add_240_OUT> created at line 324.
+    Found 7-bit adder for signal <timer_game[6]_GND_5_o_add_242_OUT> created at line 328.
+    Found 25-bit adder for signal <counter[24]_GND_5_o_add_244_OUT> created at line 331.
+    Found 13-bit adder for signal <counter[12]_GND_5_o_add_257_OUT> created at line 354.
+    Found 7-bit subtractor for signal <GND_5_o_GND_5_o_sub_250_OUT<6:0>> created at line 338.
+    Found 7x23-bit multiplier for signal <score[6]_PWR_5_o_MuLt_246_OUT> created at line 332.
+    Found 16x8-bit Read Only RAM for signal <timer_game[6]_PWR_5_o_wide_mux_267_OUT>
+    Found 16x8-bit Read Only RAM for signal <score[6]_PWR_5_o_wide_mux_281_OUT>
+    Found 16x8-bit Read Only RAM for signal <_n0910>
+    Found 4x8-bit Read Only RAM for signal <_n0920>
+    Found 16x8-bit Read Only RAM for signal <_n0940>
+WARNING:Xst:737 - Found 1-bit latch for signal <flag_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 7-bit comparator lessequal for signal <n0016> created at line 208
+    Found 32-bit comparator lessequal for signal <n0022> created at line 159
+    Found 32-bit comparator lessequal for signal <n0024> created at line 159
+    Found 32-bit comparator lessequal for signal <n0027> created at line 161
+    Found 32-bit comparator lessequal for signal <n0032> created at line 161
+    Found 32-bit comparator lessequal for signal <n0037> created at line 161
+    Found 32-bit comparator lessequal for signal <n0042> created at line 161
+    Found 32-bit comparator lessequal for signal <n0047> created at line 161
+    Found 32-bit comparator lessequal for signal <n0056> created at line 214
+    Found 32-bit comparator greater for signal <GND_5_o_INV_41_o> created at line 174
+    Found 32-bit comparator lessequal for signal <n0062> created at line 174
+    Found 32-bit comparator lessequal for signal <n0065> created at line 174
+    Found 32-bit comparator lessequal for signal <n0068> created at line 174
+    Found 32-bit comparator lessequal for signal <n0071> created at line 174
+    Found 32-bit comparator lessequal for signal <n0077> created at line 214
+    Found 32-bit comparator greater for signal <GND_5_o_INV_42_o> created at line 174
+    Found 32-bit comparator lessequal for signal <n0089> created at line 214
+    Found 32-bit comparator lessequal for signal <n0091> created at line 174
+    Found 32-bit comparator lessequal for signal <n0100> created at line 214
+    Found 32-bit comparator lessequal for signal <n0102> created at line 174
+    Found 32-bit comparator lessequal for signal <n0110> created at line 214
+    Found 32-bit comparator lessequal for signal <n0112> created at line 174
+    Found 32-bit comparator lessequal for signal <n0119> created at line 229
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.trophy_position_y[31]_LessThan_85_o> created at line 229
+    Found 32-bit comparator lessequal for signal <n0125> created at line 235
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.trophy_position_y[31]_LessThan_89_o> created at line 235
+    Found 32-bit comparator lessequal for signal <n0141> created at line 245
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.branch_positions[0]_y[31]_LessThan_99_o> created at line 245
+    Found 32-bit comparator lessequal for signal <n0154> created at line 245
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_107_o> created at line 245
+    Found 32-bit comparator lessequal for signal <n0167> created at line 245
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_115_o> created at line 245
+    Found 32-bit comparator lessequal for signal <n0180> created at line 245
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_123_o> created at line 245
+    Found 32-bit comparator lessequal for signal <n0193> created at line 245
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_131_o> created at line 245
+    Found 12-bit comparator lessequal for signal <n0206> created at line 257
+    Found 12-bit comparator lessequal for signal <n0209> created at line 257
+    Found 11-bit comparator lessequal for signal <n0211> created at line 257
+    Found 11-bit comparator lessequal for signal <n0213> created at line 257
+    Found 11-bit comparator lessequal for signal <n0219> created at line 262
+    Found 11-bit comparator lessequal for signal <n0221> created at line 262
+    Found 11-bit comparator greater for signal <GND_5_o_ScanlineY[10]_LessThan_146_o> created at line 262
+    Found 11-bit comparator greater for signal <ScanlineY[10]_GND_5_o_LessThan_147_o> created at line 262
+    Found 12-bit comparator lessequal for signal <n0229> created at line 267
+    Found 12-bit comparator lessequal for signal <n0232> created at line 267
+    Found 12-bit comparator lessequal for signal <n0234> created at line 268
+    Found 12-bit comparator lessequal for signal <n0237> created at line 268
+    Found 12-bit comparator lessequal for signal <n0243> created at line 274
+    Found 12-bit comparator lessequal for signal <n0246> created at line 274
+    Found 12-bit comparator lessequal for signal <n0248> created at line 275
+    Found 12-bit comparator lessequal for signal <n0251> created at line 275
+    Found 12-bit comparator lessequal for signal <n0257> created at line 274
+    Found 12-bit comparator lessequal for signal <n0260> created at line 274
+    Found 12-bit comparator lessequal for signal <n0262> created at line 275
+    Found 12-bit comparator lessequal for signal <n0265> created at line 275
+    Found 12-bit comparator lessequal for signal <n0271> created at line 274
+    Found 12-bit comparator lessequal for signal <n0274> created at line 274
+    Found 12-bit comparator lessequal for signal <n0276> created at line 275
+    Found 12-bit comparator lessequal for signal <n0279> created at line 275
+    Found 12-bit comparator lessequal for signal <n0285> created at line 274
+    Found 12-bit comparator lessequal for signal <n0288> created at line 274
+    Found 12-bit comparator lessequal for signal <n0290> created at line 275
+    Found 12-bit comparator lessequal for signal <n0293> created at line 275
+    Found 12-bit comparator lessequal for signal <n0299> created at line 274
+    Found 12-bit comparator lessequal for signal <n0302> created at line 274
+    Found 12-bit comparator lessequal for signal <n0304> created at line 275
+    Found 12-bit comparator lessequal for signal <n0307> created at line 275
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.trophy_position_x[31]_LessThan_197_o> created at line 289
+    Found 32-bit comparator greater for signal <GND_5_o_game_loop.trophy_position_y[31]_LessThan_198_o> created at line 289
+    Found 31-bit comparator equal for signal <GND_5_o_GND_5_o_equal_249_o> created at line 332
+    Found 7-bit comparator lessequal for signal <n0459> created at line 454
+    Summary:
+	inferred   5 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred  25 Adder/Subtractor(s).
+	inferred 563 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred  72 Comparator(s).
+	inferred 118 Multiplexer(s).
+Unit <LumberJack> synthesized.
+
+Synthesizing Unit <VGA_controller>.
+    Related source file is "C:\CADProject\VGA_Controller.vhd".
+    Found 11-bit register for signal <CurrentVPos>.
+    Found 11-bit register for signal <CurrentHPos>.
+    Found 11-bit adder for signal <CurrentHPos[10]_GND_6_o_add_1_OUT> created at line 48.
+    Found 11-bit adder for signal <CurrentVPos[10]_GND_6_o_add_3_OUT> created at line 51.
+    Found 11-bit subtractor for signal <GND_6_o_GND_6_o_sub_20_OUT<10:0>> created at line 79.
+    Found 11-bit subtractor for signal <GND_6_o_GND_6_o_sub_17_OUT<10:0>> created at line 76.
+    Found 11-bit comparator greater for signal <CurrentHPos[10]_GND_6_o_LessThan_1_o> created at line 47
+    Found 11-bit comparator greater for signal <CurrentVPos[10]_GND_6_o_LessThan_3_o> created at line 50
+    Found 11-bit comparator lessequal for signal <CurrentHPos[10]_GND_6_o_LessThan_10_o> created at line 61
+    Found 11-bit comparator lessequal for signal <CurrentVPos[10]_GND_6_o_LessThan_11_o> created at line 64
+    Found 11-bit comparator lessequal for signal <n0012> created at line 67
+    Found 11-bit comparator greater for signal <CurrentHPos[10]_GND_6_o_LessThan_13_o> created at line 67
+    Found 11-bit comparator lessequal for signal <n0017> created at line 70
+    Found 11-bit comparator greater for signal <CurrentVPos[10]_GND_6_o_LessThan_15_o> created at line 70
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <VGA_controller> synthesized.
+
+Synthesizing Unit <DeBounce>.
+    Related source file is "C:\CADProject\Debouncer.vhd".
+    Found 1-bit register for signal <pulse_out>.
+    Found 2-bit register for signal <state>.
+    Found 32-bit register for signal <count>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | Clock (rising_edge)                            |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <count[31]_GND_8_o_add_2_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <DeBounce> synthesized.
+
+Synthesizing Unit <mod_7u_4u>.
+    Related source file is "".
+    Found 11-bit adder for signal <n0201> created at line 0.
+    Found 11-bit adder for signal <GND_12_o_b[3]_add_1_OUT> created at line 0.
+    Found 10-bit adder for signal <n0205> created at line 0.
+    Found 10-bit adder for signal <GND_12_o_b[3]_add_3_OUT> created at line 0.
+    Found 9-bit adder for signal <n0209> created at line 0.
+    Found 9-bit adder for signal <GND_12_o_b[3]_add_5_OUT> created at line 0.
+    Found 8-bit adder for signal <n0213> created at line 0.
+    Found 8-bit adder for signal <GND_12_o_b[3]_add_7_OUT> created at line 0.
+    Found 7-bit adder for signal <n0217> created at line 0.
+    Found 7-bit adder for signal <a[6]_b[3]_add_9_OUT> created at line 0.
+    Found 7-bit adder for signal <n0221> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_12_o_add_11_OUT> created at line 0.
+    Found 7-bit adder for signal <n0225> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_12_o_add_13_OUT> created at line 0.
+    Found 7-bit adder for signal <n0229> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_12_o_add_15_OUT> created at line 0.
+    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  50 Multiplexer(s).
+Unit <mod_7u_4u> synthesized.
+
+Synthesizing Unit <div_7u_4u>.
+    Related source file is "".
+    Found 11-bit adder for signal <n0201> created at line 0.
+    Found 11-bit adder for signal <GND_13_o_b[3]_add_1_OUT> created at line 0.
+    Found 10-bit adder for signal <n0205> created at line 0.
+    Found 10-bit adder for signal <GND_13_o_b[3]_add_3_OUT> created at line 0.
+    Found 9-bit adder for signal <n0209> created at line 0.
+    Found 9-bit adder for signal <GND_13_o_b[3]_add_5_OUT> created at line 0.
+    Found 8-bit adder for signal <n0213> created at line 0.
+    Found 8-bit adder for signal <GND_13_o_b[3]_add_7_OUT> created at line 0.
+    Found 7-bit adder for signal <n0217> created at line 0.
+    Found 7-bit adder for signal <a[6]_b[3]_add_9_OUT[6:0]> created at line 0.
+    Found 7-bit adder for signal <n0221> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_13_o_add_11_OUT[6:0]> created at line 0.
+    Found 7-bit adder for signal <n0225> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_13_o_add_13_OUT[6:0]> created at line 0.
+    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  31 Multiplexer(s).
+Unit <div_7u_4u> synthesized.
+
+Synthesizing Unit <div_7u_5u>.
+    Related source file is "".
+    Found 12-bit adder for signal <GND_9_o_b[4]_add_1_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_9_o_b[4]_add_3_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_9_o_b[4]_add_5_OUT> created at line 0.
+    Found 9-bit adder for signal <GND_9_o_b[4]_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_9_o_b[4]_add_9_OUT> created at line 0.
+    Found 7-bit adder for signal <a[6]_b[4]_add_11_OUT[6:0]> created at line 0.
+    Found 7-bit adder for signal <a[6]_GND_9_o_add_13_OUT[6:0]> created at line 0.
+    Found 12-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+	inferred  31 Multiplexer(s).
+Unit <div_7u_5u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x8-bit single-port Read Only RAM                    : 4
+ 4x8-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 23x7-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 98
+ 10-bit adder                                          : 9
+ 11-bit adder                                          : 11
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 1
+ 13-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 31-bit subtractor                                     : 1
+ 32-bit adder                                          : 22
+ 7-bit adder                                           : 31
+ 7-bit addsub                                          : 1
+ 8-bit adder                                           : 9
+ 9-bit adder                                           : 9
+# Registers                                            : 38
+ 1-bit register                                        : 8
+ 11-bit register                                       : 2
+ 13-bit register                                       : 1
+ 25-bit register                                       : 1
+ 32-bit register                                       : 16
+ 4-bit register                                        : 1
+ 6-bit register                                        : 1
+ 7-bit register                                        : 3
+ 8-bit register                                        : 5
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 120
+ 10-bit comparator lessequal                           : 5
+ 11-bit comparator greater                             : 6
+ 11-bit comparator lessequal                           : 13
+ 12-bit comparator lessequal                           : 27
+ 31-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 11
+ 32-bit comparator lessequal                           : 26
+ 7-bit comparator lessequal                            : 21
+ 8-bit comparator lessequal                            : 5
+ 9-bit comparator lessequal                            : 5
+# Multiplexers                                         : 320
+ 1-bit 2-to-1 multiplexer                              : 212
+ 11-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 3
+ 25-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 61
+ 4-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 7
+ 7-bit 2-to-1 multiplexer                              : 12
+ 8-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DeBounce>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DeBounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LumberJack>.
+The following registers are absorbed into counter <game_loop.score_variable>: 1 register on signal <game_loop.score_variable>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_score[6]_PWR_5_o_wide_mux_281_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <score[6]_PWR_5_o_mod_280_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0940> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <score[6]_PWR_5_o_div_282_OUT<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0920> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <score[6]_PWR_5_o_div_294_OUT<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_timer_game[6]_PWR_5_o_wide_mux_267_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <timer_game[6]_PWR_5_o_mod_266_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0910> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <timer_game[6]_PWR_5_o_div_268_OUT<3:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <LumberJack> synthesized (advanced).
+
+Synthesizing (advanced) Unit <VGA_controller>.
+The following registers are absorbed into counter <CurrentHPos>: 1 register on signal <CurrentHPos>.
+The following registers are absorbed into counter <CurrentVPos>: 1 register on signal <CurrentVPos>.
+Unit <VGA_controller> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x8-bit single-port distributed Read Only RAM        : 4
+ 4x8-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 23x7-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 64
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 13
+ 13-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 31-bit subtractor                                     : 1
+ 32-bit adder                                          : 7
+ 4-bit adder carry in                                  : 2
+ 7-bit adder                                           : 8
+ 7-bit adder carry in                                  : 28
+ 7-bit addsub                                          : 1
+# Counters                                             : 6
+ 11-bit up counter                                     : 2
+ 13-bit up counter                                     : 1
+ 32-bit up counter                                     : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 545
+ Flip-Flops                                            : 545
+# Comparators                                          : 120
+ 10-bit comparator lessequal                           : 5
+ 11-bit comparator greater                             : 6
+ 11-bit comparator lessequal                           : 13
+ 12-bit comparator lessequal                           : 27
+ 31-bit comparator equal                               : 1
+ 32-bit comparator greater                             : 11
+ 32-bit comparator lessequal                           : 26
+ 7-bit comparator lessequal                            : 21
+ 8-bit comparator lessequal                            : 5
+ 9-bit comparator lessequal                            : 5
+# Multiplexers                                         : 471
+ 1-bit 2-to-1 multiplexer                              : 372
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 3
+ 25-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 54
+ 4-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 7
+ 7-bit 2-to-1 multiplexer                              : 12
+ 8-bit 2-to-1 multiplexer                              : 18
+# FSMs                                                 : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Debounder_Key0/FSM_0> on signal <state[1:2]> with user encoding.
+Optimizing FSM <Debounder_Key1/FSM_0> on signal <state[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 00
+ wait_time  | 01
+ wait_time2 | 10
+------------------------
+WARNING:Xst:1293 - FF/Latch <game_loop.branch_positions[0]_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_2> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_6> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_9> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorTable_0> (without init value) has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ColorTable_1> (without init value) has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg2_7> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg3_7> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg0_7> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seg1_7> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_1> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_2> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_3> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_5> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_7> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_8> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_9> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.current_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_2> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_6> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_9> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_2> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_6> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_9> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[4]_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_2> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_6> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_9> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_2> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_6> has a constant value of 1 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_9> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <Leds_4> in Unit <LumberJack> is equivalent to the following 3 FFs/Latches, which will be removed : <Leds_5> <Leds_6> <Leds_7> 
+INFO:Xst:2261 - The FF/Latch <ColorTable_4> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <ColorTable_5> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    seg1_6 in unit <LumberJack>
+    seg1_1 in unit <LumberJack>
+    seg0_6 in unit <LumberJack>
+    seg0_4 in unit <LumberJack>
+    seg0_1 in unit <LumberJack>
+    seg3_6 in unit <LumberJack>
+    seg3_5 in unit <LumberJack>
+    seg3_2 in unit <LumberJack>
+    timer_game_4 in unit <LumberJack>
+    timer_game_2 in unit <LumberJack>
+    timer_game_1 in unit <LumberJack>
+    flag_rst in unit <LumberJack>
+
+
+Optimizing unit <LumberJack> ...
+INFO:Xst:2261 - The FF/Latch <score_0> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_0> 
+WARNING:Xst:1293 - FF/Latch <game_loop.branch_positions[4]_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <score_1> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_1> 
+INFO:Xst:2261 - The FF/Latch <score_2> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_2> 
+INFO:Xst:2261 - The FF/Latch <score_3> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_3> 
+INFO:Xst:2261 - The FF/Latch <score_4> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_4> 
+WARNING:Xst:1293 - FF/Latch <game_loop.branch_positions[4]_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <VGA_controller> ...
+
+Optimizing unit <DeBounce> ...
+
+Optimizing unit <div_7u_5u> ...
+WARNING:Xst:1293 - FF/Latch <game_loop.trophy_position_x_31> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_30> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_29> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_28> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_27> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_26> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_25> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_24> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_23> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_22> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_21> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_20> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_19> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_18> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_17> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_16> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_15> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_14> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_13> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_12> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_11> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_2> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_x_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <game_loop.flag_key> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[3]_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[2]_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[1]_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.branch_positions[0]_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_loop.trophy_position_y_0> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_Control/CurrentVPos_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <VGA_Control/CurrentHPos_10> has a constant value of 0 in block <LumberJack>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <score_2> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_2> 
+INFO:Xst:2261 - The FF/Latch <score_3> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_3> 
+INFO:Xst:2261 - The FF/Latch <score_4> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_4> 
+INFO:Xst:2261 - The FF/Latch <game_loop.branch_positions[3]_x_1> in Unit <LumberJack> is equivalent to the following 2 FFs/Latches, which will be removed : <game_loop.branch_positions[3]_x_3> <game_loop.branch_positions[3]_x_8> 
+INFO:Xst:2261 - The FF/Latch <score_5> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_5> 
+INFO:Xst:2261 - The FF/Latch <score_6> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.score_variable_6> 
+INFO:Xst:2261 - The FF/Latch <game_loop.branch_positions[4]_x_1> in Unit <LumberJack> is equivalent to the following 2 FFs/Latches, which will be removed : <game_loop.branch_positions[4]_x_3> <game_loop.branch_positions[4]_x_8> 
+INFO:Xst:2261 - The FF/Latch <game_loop.branch_positions[0]_x_1> in Unit <LumberJack> is equivalent to the following 2 FFs/Latches, which will be removed : <game_loop.branch_positions[0]_x_3> <game_loop.branch_positions[0]_x_8> 
+INFO:Xst:2261 - The FF/Latch <Leds_0> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <flag_key_0044> 
+INFO:Xst:2261 - The FF/Latch <game_loop.branch_positions[1]_x_1> in Unit <LumberJack> is equivalent to the following 2 FFs/Latches, which will be removed : <game_loop.branch_positions[1]_x_3> <game_loop.branch_positions[1]_x_8> 
+INFO:Xst:2261 - The FF/Latch <game_loop.branch_positions[2]_x_1> in Unit <LumberJack> is equivalent to the following 2 FFs/Latches, which will be removed : <game_loop.branch_positions[2]_x_3> <game_loop.branch_positions[2]_x_8> 
+INFO:Xst:2261 - The FF/Latch <game_loop.current_x_4> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <game_loop.current_x_6> 
+INFO:Xst:2261 - The FF/Latch <game_loop.score_variable_1> in Unit <LumberJack> is equivalent to the following FF/Latch, which will be removed : <score_1> 
+INFO:Xst:3203 - The FF/Latch <game_loop.branch_positions[3]_x_1> in Unit <LumberJack> is the opposite to the following 3 FFs/Latches, which will be removed : <game_loop.branch_positions[3]_x_4> <game_loop.branch_positions[3]_x_5> <game_loop.branch_positions[3]_x_7> 
+INFO:Xst:3203 - The FF/Latch <game_loop.branch_positions[4]_x_1> in Unit <LumberJack> is the opposite to the following 3 FFs/Latches, which will be removed : <game_loop.branch_positions[4]_x_4> <game_loop.branch_positions[4]_x_5> <game_loop.branch_positions[4]_x_7> 
+INFO:Xst:3203 - The FF/Latch <game_loop.trophy_position_x_3> in Unit <LumberJack> is the opposite to the following FF/Latch, which will be removed : <game_loop.trophy_position_x_5> 
+INFO:Xst:3203 - The FF/Latch <game_loop.trophy_position_x_4> in Unit <LumberJack> is the opposite to the following FF/Latch, which will be removed : <game_loop.trophy_position_x_8> 
+INFO:Xst:3203 - The FF/Latch <game_loop.trophy_position_x_9> in Unit <LumberJack> is the opposite to the following FF/Latch, which will be removed : <game_loop.trophy_position_x_6> 
+INFO:Xst:3203 - The FF/Latch <game_loop.branch_positions[0]_x_1> in Unit <LumberJack> is the opposite to the following 3 FFs/Latches, which will be removed : <game_loop.branch_positions[0]_x_4> <game_loop.branch_positions[0]_x_5> <game_loop.branch_positions[0]_x_7> 
+INFO:Xst:3203 - The FF/Latch <game_loop.branch_positions[1]_x_1> in Unit <LumberJack> is the opposite to the following 3 FFs/Latches, which will be removed : <game_loop.branch_positions[1]_x_4> <game_loop.branch_positions[1]_x_5> <game_loop.branch_positions[1]_x_7> 
+INFO:Xst:3203 - The FF/Latch <game_loop.branch_positions[2]_x_1> in Unit <LumberJack> is the opposite to the following 3 FFs/Latches, which will be removed : <game_loop.branch_positions[2]_x_4> <game_loop.branch_positions[2]_x_5> <game_loop.branch_positions[2]_x_7> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block LumberJack, actual ratio is 44.
+WARNING:Xst:1426 - The value init of the FF/Latch seg3_2_LD hinder the constant cleaning in the block LumberJack.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch timer_game_1_LD hinder the constant cleaning in the block LumberJack.
+   You should achieve better results by setting this init to 0.
+
+Final Macro Processing ...
+
+Processing Unit <LumberJack> :
+	Found 20-bit shift register for signal <pseudo_rand_21>.
+	Found 10-bit shift register for signal <pseudo_rand_31>.
+Unit <LumberJack> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 396
+ Flip-Flops                                            : 396
+# Shift Registers                                      : 2
+ 10-bit shift register                                 : 1
+ 20-bit shift register                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : LumberJack.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3269
+#      GND                         : 1
+#      INV                         : 30
+#      LUT1                        : 128
+#      LUT2                        : 251
+#      LUT3                        : 145
+#      LUT4                        : 414
+#      LUT5                        : 527
+#      LUT6                        : 612
+#      MUXCY                       : 786
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 368
+# FlipFlops/Latches                : 422
+#      FDC                         : 15
+#      FDCE                        : 250
+#      FDE                         : 82
+#      FDPE                        : 34
+#      FDR                         : 15
+#      FDRE                        : 23
+#      LD                          : 3
+# Shift Registers                  : 2
+#      SRLC16E                     : 1
+#      SRLC32E                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 3
+#      OBUF                        : 28
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             422  out of  11440     3%  
+ Number of Slice LUTs:                 2109  out of   5720    36%  
+    Number used as Logic:              2107  out of   5720    36%  
+    Number used as Memory:                2  out of   1440     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2241
+   Number with an unused Flip Flop:    1819  out of   2241    81%  
+   Number with an unused LUT:           132  out of   2241     5%  
+   Number of fully used LUT-FF pairs:   290  out of   2241    12%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                          42
+ Number of bonded IOBs:                  32  out of    102    31%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK_24                           | BUFGP                  | 421   |
+RESET_N                            | IBUF+BUFG              | 3     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 30.083ns (Maximum Frequency: 33.241MHz)
+   Minimum input arrival time before clock: 5.956ns
+   Maximum output required time after clock: 8.045ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_24'
+  Clock period: 30.083ns (frequency: 33.241MHz)
+  Total number of paths / destination ports: 8273387691175 / 798
+-------------------------------------------------------------------------
+Delay:               30.083ns (Levels of Logic = 57)
+  Source:            game_loop.branch_positions[4]_y_5 (FF)
+  Destination:       ColorTable_2 (FF)
+  Source Clock:      CLOCK_24 rising
+  Destination Clock: CLOCK_24 rising
+
+  Data Path: game_loop.branch_positions[4]_y_5 to ColorTable_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            17   0.525   1.639  game_loop.branch_positions[4]_y_5 (game_loop.branch_positions[4]_y_5)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_lut<1> (Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<1> (Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<2> (Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<3> (Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<4> (Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<5> (Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<5>)
+     MUXCY:CI->O          56   0.235   1.868  Mcompar_GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o_cy<6> (GND_5_o_game_loop.branch_positions[4]_y[31]_LessThan_40_o)
+     LUT6:I5->O           13   0.254   1.098  Mmux_game_loop.branch_positions[0]_y[31]_game_loop.branch_positions[0]_y[31]_mux_42_OUT1101_1 (Mmux_game_loop.branch_positions[0]_y[31]_game_loop.branch_positions[0]_y[31]_mux_42_OUT1101)
+     LUT2:I1->O            7   0.254   1.340  Mmux_game_loop.branch_positions[0]_y[31]_game_loop.branch_positions[0]_y[31]_mux_42_OUT281 (game_loop.branch_positions[0]_y[31]_game_loop.branch_positions[0]_y[31]_mux_42_OUT<5>)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_GND_5_o_INV_42_o_lut<1> (Mcompar_GND_5_o_INV_42_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_5_o_INV_42_o_cy<1> (Mcompar_GND_5_o_INV_42_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_INV_42_o_cy<2> (Mcompar_GND_5_o_INV_42_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_INV_42_o_cy<3> (Mcompar_GND_5_o_INV_42_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_INV_42_o_cy<4> (Mcompar_GND_5_o_INV_42_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_INV_42_o_cy<5> (Mcompar_GND_5_o_INV_42_o_cy<5>)
+     MUXCY:CI->O          84   0.023   2.085  Mcompar_GND_5_o_INV_42_o_cy<6> (Mcompar_GND_5_o_INV_42_o_cy<6>)
+     LUT6:I5->O            8   0.254   1.374  Mmux_game_loop.branch_positions[1]_y[31]_game_loop.branch_positions[1]_y[31]_mux_52_OUT281 (game_loop.branch_positions[1]_y[31]_game_loop.branch_positions[1]_y[31]_mux_52_OUT<5>)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_lut<1> (Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<1> (Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<2> (Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<3> (Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<4> (Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<5> (Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<5>)
+     MUXCY:CI->O          69   0.023   1.968  Mcompar_GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o_cy<6> (GND_5_o_game_loop.branch_positions[1]_y[31]_LessThan_57_o)
+     LUT6:I5->O            8   0.254   1.374  Mmux_game_loop.branch_positions[2]_y[31]_game_loop.branch_positions[2]_y[31]_mux_62_OUT281 (game_loop.branch_positions[2]_y[31]_game_loop.branch_positions[2]_y[31]_mux_62_OUT<5>)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_lut<1> (Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<1> (Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<2> (Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<3> (Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<4> (Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<5> (Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<5>)
+     MUXCY:CI->O          54   0.023   1.852  Mcompar_GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o_cy<6> (GND_5_o_game_loop.branch_positions[2]_y[31]_LessThan_68_o)
+     LUT6:I5->O           14   0.254   1.557  Mmux_game_loop.branch_positions[3]_y[31]_game_loop.branch_positions[3]_y[31]_mux_72_OUT281 (game_loop.branch_positions[3]_y[31]_game_loop.branch_positions[3]_y[31]_mux_72_OUT<5>)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_lut<1> (Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<1> (Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<2> (Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<3> (Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<4> (Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<5> (Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<5>)
+     MUXCY:CI->O          33   0.023   1.537  Mcompar_GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o_cy<6> (GND_5_o_game_loop.branch_positions[3]_y[31]_LessThan_79_o)
+     LUT6:I5->O            4   0.254   1.234  Mmux_game_loop.branch_positions[4]_y[31]_game_loop.branch_positions[4]_y[31]_mux_82_OUT321 (game_loop.branch_positions[4]_y[31]_game_loop.branch_positions[4]_y[31]_mux_82_OUT<9>)
+     LUT5:I0->O            1   0.254   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_lut<1> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<1> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<2> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<3> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<4> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<5> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<5>)
+     MUXCY:CI->O          54   0.235   1.960  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o_cy<6> (game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_130_o)
+     LUT5:I3->O            2   0.250   1.002  Madd_n0571_Madd_xor<1>11 (n0571<1>)
+     LUT4:I0->O            0   0.254   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_lutdi (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<0> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<1> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<2> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<3> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<4> (Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<4>)
+     MUXCY:CI->O           3   0.235   0.874  Mcompar_game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o_cy<5> (game_loop.branch_positions[4]_y[31]_GND_5_o_LessThan_189_o)
+     LUT6:I4->O            1   0.250   0.000  Mmux_GND_5_o_PWR_5_o_mux_189_OUT21 (GND_5_o_PWR_5_o_mux_189_OUT<3>)
+     FDCE:D                    0.074          ColorTable_3
+    ----------------------------------------
+    Total                     30.083ns (7.322ns logic, 22.762ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_24'
+  Total number of paths / destination ports: 474 / 474
+-------------------------------------------------------------------------
+Offset:              5.956ns (Levels of Logic = 3)
+  Source:            Key<0> (PAD)
+  Destination:       timer_game_0 (FF)
+  Destination Clock: CLOCK_24 rising
+
+  Data Path: Key<0> to timer_game_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.949  Key_0_IBUF (Key_0_IBUF)
+     LUT3:I1->O           27   0.250   1.866  Mmux_flag_key_PWR_5_o_MUX_178_o11 (flag_key_PWR_5_o_MUX_178_o)
+     LUT5:I0->O           10   0.254   1.007  _n0985_inv1 (_n0985_inv)
+     FDCE:CE                   0.302          timer_game_0
+    ----------------------------------------
+    Total                      5.956ns (2.134ns logic, 3.822ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RESET_N'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.966ns (Levels of Logic = 2)
+  Source:            RESET_N (PAD)
+  Destination:       flag_rst (LATCH)
+  Destination Clock: RESET_N rising
+
+  Data Path: RESET_N to flag_rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.328   0.909  RESET_N_IBUF (RESET_N_IBUF)
+     INV:I->O            323   0.255   2.438  RESET_N_IBUF_BUFG_LUT1_INV_0 (RESET_N_IBUF_BUFG_LUT1)
+     LD:D                      0.036          flag_rst
+    ----------------------------------------
+    Total                      4.966ns (1.619ns logic, 3.347ns route)
+                                       (32.6% logic, 67.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_24'
+  Total number of paths / destination ports: 187 / 25
+-------------------------------------------------------------------------
+Offset:              8.045ns (Levels of Logic = 4)
+  Source:            VGA_Control/CurrentVPos_2 (FF)
+  Destination:       VGA_R<1> (PAD)
+  Source Clock:      CLOCK_24 rising
+
+  Data Path: VGA_Control/CurrentVPos_2 to VGA_R<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.525   1.052  VGA_Control/CurrentVPos_2 (VGA_Control/CurrentVPos_2)
+     LUT2:I0->O            3   0.250   0.766  VGA_Control/Blank_INV_25_o111 (VGA_Control/Blank_INV_25_o11)
+     LUT6:I5->O           13   0.254   1.326  VGA_Control/Blank_INV_25_o1 (VGA_Control/Blank_INV_25_o1)
+     LUT6:I3->O            2   0.235   0.725  VGA_Control/Mmux_RED11 (VGA_R_0_OBUF)
+     OBUF:I->O                 2.912          VGA_R_0_OBUF (VGA_R<0>)
+    ----------------------------------------
+    Total                      8.045ns (4.176ns logic, 3.869ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RESET_N'
+  Total number of paths / destination ports: 8 / 5
+-------------------------------------------------------------------------
+Offset:              7.350ns (Levels of Logic = 4)
+  Source:            seg3_2_LD (LATCH)
+  Destination:       sevensegments<5> (PAD)
+  Source Clock:      RESET_N rising
+
+  Data Path: seg3_2_LD to sevensegments<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               5   0.581   1.069  seg3_2_LD (seg3_2_LD)
+     LUT3:I0->O            1   0.235   0.682  seg3_21 (seg3_2)
+     LUT6:I5->O            1   0.254   0.682  Mmux_sevensegments31 (Mmux_sevensegments3)
+     LUT6:I5->O            1   0.254   0.681  Mmux_sevensegments32 (sevensegments_2_OBUF)
+     OBUF:I->O                 2.912          sevensegments_2_OBUF (sevensegments<2>)
+    ----------------------------------------
+    Total                      7.350ns (4.236ns logic, 3.114ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK_24
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_24       |   30.083|         |         |         |
+RESET_N        |   22.840|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.35 secs
+ 
+--> 
+
+Total memory usage is 279756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  213 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
+

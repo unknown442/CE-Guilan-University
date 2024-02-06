@@ -1,0 +1,905 @@
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 LumberJack.ngc LumberJack.ngd  
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-csg225-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 
+xst -intstyle ise -ifn "C:/CADProject/LumberJack.xst" -ofn "C:/CADProject/LumberJack.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA.ucf -p xc6slx9-tqg144-2 LumberJack.ngc LumberJack.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LumberJack_map.ncd LumberJack.ngd LumberJack.pcf 
+par -w -intstyle ise -ol high -mt off LumberJack_map.ncd LumberJack.ncd LumberJack.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml LumberJack.twx LumberJack.ncd -o LumberJack.twr LumberJack.pcf -ucf VGA.ucf 
+bitgen -intstyle ise -f LumberJack.ut LumberJack.ncd 

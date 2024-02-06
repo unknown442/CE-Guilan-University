@@ -1,0 +1,1 @@
+vhdtdtfi -prj CADProject -o Debouncer.spl -module Debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
